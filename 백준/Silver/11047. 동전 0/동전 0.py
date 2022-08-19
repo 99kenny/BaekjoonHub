@@ -8,9 +8,9 @@ for i in range(0,coinNum):
 
 count = 0
 total = amount
+value.reverse()
 
-for i in range(0,coinNum):
-    index = coinNum - i - 1
-    count += (total // value[index])
-    total = total % value[index]
+for i in value:
+    count += (total // i)
+    total = total % i
 print(count)        
