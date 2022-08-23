@@ -1,6 +1,8 @@
-n = int(input())
-a = list(map(int,input().split()))
-b = list(map(int,input().split()))
+import sys
+
+n = int(sys.stdin.readline())
+a = [int(i) for i in sys.stdin.readline().split()]
+b = [int(i) for i in sys.stdin.readline().split()]
 sum = 0
 for i in range(n):
     minimum = min(a)
@@ -9,4 +11,4 @@ for i in range(n):
     b.remove(maximum)
     sum += (maximum * minimum)
 
-print(sum)
+print(sum)  
