@@ -1,17 +1,9 @@
-import sys
-
-m = 1000 - int(sys.stdin.readline())
-cnt = 0
-cnt += (m//500)
-m = m % 500
-cnt += (m//100)
-m = m % 100
-cnt += (m//50)
-m = m % 50
-cnt += (m//10)
-m = m % 10
-cnt += (m//5)
-m = m % 5
-cnt += m
-
-print(cnt)
+a=int(input())
+b=1000-a
+c=b//500
+d=b%500//100
+e=b%100//50
+f=b%50//10
+g=b%10//5
+h=b%5
+print(c+d+e+f+g+h)
