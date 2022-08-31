@@ -1,4 +1,3 @@
-from posixpath import split
 import sys
 
 n = int(sys.stdin.readline())
